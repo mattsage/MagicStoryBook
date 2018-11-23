@@ -9,7 +9,7 @@ def openbook():
 	os.system("mp321 /home/pi/Twinkle.mp3")	
 	randomfile = random.choice(os.listdir("/home/pi/music/"))
 	file = '/home/pi/music/'+ randomfile
-	#os.system ('omxplayer' + file)
+	#os.system ('omxplayer -o alsa' + file)
 	os.system('mp321' + file)
 	os.system("mp321 /home/pi/TheEnd.mp3")
 def closebook():
